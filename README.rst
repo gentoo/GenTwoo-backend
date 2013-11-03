@@ -9,6 +9,10 @@ Purpose of the project is to provide the Gentoo Community with a
 scalable, secure, user friendly and engaging system tracking usage of
 individual packages on users machines and possibly per users too.
 
+Later this project may serve as a starting for the idea of Gentoo
+Crowdsourced QA, which is floating around the IRC lately.
+
+
 Official Resources
 ##################
 
