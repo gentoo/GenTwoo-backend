@@ -69,6 +69,12 @@ More Ideas
 
 Could also serve for auditing purposes.
 
+Technical: In later versions the client could be implemented as a plugin
+for `collectd <http://collectd.org/>` which is a system designed exactly
+for this purpose, with superb architecture, with minimal footprint to
+run even on embedded systems and capable of samling period as little as
+10 seconds.
+
 .. [1] bonsaikitten
 .. [2] http://en.wikipedia.org/wiki/Asynchronous_I/O
 .. [3] http://www.kegel.com/c10k.html
