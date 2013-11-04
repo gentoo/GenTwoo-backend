@@ -38,7 +38,42 @@ Usefulness
 
 In order to provide usefull data, following data model is required.
 
-.. TBD
+.. parsed-literal::
+
+    Machines:
+        id : uuid
+        |cat|
+        |mat|
+
+    Packages:
+        category : string
+        name : string
+        version : string
+
+    PackageStateChanges:
+        |pid|
+        event : enum(install, uninstall)
+        |cat|
+        ; these records should never be modified once entered, so no
+        ; |mat|
+        |rat|
+
+.. |pid| replace:: package_id : refs Packages(id)
+.. |cat| replace:: created_at : DateTimeUTC ; refers to record ctime
+.. |mat| replace::
+    modified_at : DateTimeUTC default null ; refers to last record mtime
+.. |rat| replace:: recorded_at : DateTimeWithTZ
+    ; refers to emerge.log recorded time since there may be significant
+    delays
+    ; since rat is reliable on wall, some other method may be in order
+    ; in future versions
+    ; ideas:
+    ;   * check if the machine was recently synced with NTP
+    ;   * with client in daemon mode and both client and BDCS machine is
+    ;     online with reasonable latency it could flag the record as
+    ;     more reliable on created_at, since daemon can recognize it's
+    ;     happening right, now.
+
 
 Client
 ######
