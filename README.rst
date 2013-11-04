@@ -5,9 +5,13 @@ GenTwoo
 GenTwoo >=0.1.0 is a rewrite from scratch of original effort on `GenTwoo
 <https://github.com/naota/gentwoo>`_ by `naota <http://elisp.net/>`_
 
-Purpose of the project is to provide the Gentoo Community with a
-scalable, secure, user friendly and engaging system tracking usage of
-individual packages on users machines and possibly per users too.
+
+.. NOTE: following paragraph is indentical in
+   /Documentation/product_specification.rst
+
+Purpose of the project is to provide the Gentoo Community with a useful,
+scalable, secure, user friendly and engaging package usage tracking on
+users machines and possibly per users too.
 
 Official Resources
 ##################
