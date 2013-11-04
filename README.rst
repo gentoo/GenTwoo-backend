@@ -15,8 +15,15 @@ Official Resources
 Git repositories:
 
 * `backend <https://github.com/gentoo/GenTwoo-backend>`_
+
 * `client <https://github.com/gentoo/GenTwoo-client>`_
 
-Issue Tracker: on GitHub in appropriate repository
+Issue Tracker:
 
-Documentation: on GitHub in appropriate repository
+* `client specific bugs and features <https://github.com/gentoo/GenTwoo-client/issues>`_
+
+* `everything else <https://github.com/gentoo/GenTwoo-backend/issues>`_
+
+`Documentation <./Documentation/>`_
+
+`How to contribute <./Documentation/contributing.rst>`_
