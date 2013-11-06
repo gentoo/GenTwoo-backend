@@ -1,0 +1,3 @@
+/robots.txt RobotsR GET
+
+/v0/register V0RegisterR POST
