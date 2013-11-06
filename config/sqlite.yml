@@ -1,0 +1,20 @@
+Default: &defaults
+  database: GenTwoo-backend.sqlite3
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: GenTwoo-backend_test.sqlite3
+  <<: *defaults
+
+Staging:
+  database: GenTwoo-backend_staging.sqlite3
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: GenTwoo-backend_production.sqlite3
+  poolsize: 100
+  <<: *defaults
