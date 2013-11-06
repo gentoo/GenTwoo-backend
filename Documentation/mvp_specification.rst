@@ -49,6 +49,7 @@ In order to provide usefull data, following data model is required.
         category : string
         name : string
         version : string
+        repository : string
 
     PackageStateChanges:
         |pid|
