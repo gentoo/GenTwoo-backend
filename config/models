@@ -1,0 +1,16 @@
+Machine json
+    uuid        String
+    created_at  UTCTime default=CURRENT_TIME
+    modified_at UTCTime default=CURRENT_TIME
+    UniqueUUID uuid
+    deriving Show
+Package
+    category String
+    name     String
+    version  String
+PackageStateChange
+    package     PackageId
+    machine     MachineId
+    event       Event
+    created_at  UTCTime default=CURRENT_TIME
+    recorded_at UTCTime
