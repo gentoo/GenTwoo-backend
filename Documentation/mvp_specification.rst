@@ -52,6 +52,7 @@ In order to provide usefull data, following data model is required.
 
     PackageStateChanges:
         |pid|
+        |mid|
         event : enum(install, uninstall)
         |cat|
         ; these records should never be modified once entered, so no
@@ -59,6 +60,7 @@ In order to provide usefull data, following data model is required.
         |rat|
 
 .. |pid| replace:: package_id : refs Packages(id)
+.. |mid| replace:: machine_id : refs Machines(id)
 .. |cat| replace:: created_at : DateTimeUTC ; refers to record ctime
 .. |mat| replace::
     modified_at : DateTimeUTC default null ; refers to last record mtime
