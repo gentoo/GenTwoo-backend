@@ -62,13 +62,14 @@ In order to provide usefull data, following data model is required.
 .. |pid| replace:: package_id : refs Packages(id)
 .. |mid| replace:: machine_id : refs Machines(id)
 .. |cat| replace:: created_at : DateTimeUTC ; refers to record ctime
+    ; datetime when emerge finished
 .. |mat| replace::
     modified_at : DateTimeUTC default null ; refers to last record mtime
 .. |rat| replace:: recorded_at : DateTimeWithTZ
-    ; refers to emerge.log recorded time since there may be significant
-    delays
-    ; since rat is reliable on wall, some other method may be in order
-    ; in future versions
+    ; wall time of emerge completition from emerge.log
+    ;
+    ; since this requires correct clock on the client system, some other
+    ; method to record complete time may be helpful
     ; ideas:
     ;   * check if the machine was recently synced with NTP
     ;   * with client in daemon mode and both client and BDCS machine is
