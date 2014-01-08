@@ -58,6 +58,9 @@ In order to provide usefull data, following data model is required.
         ; these records should never be modified once entered, so no
         ; |mat|
         |rat|
+        |install_type| : enum(source, binary)
+        time_delta : int ; in seconds
+        ; created_at - time_delta = emerge start time
 
 .. |pid| replace:: package_id : refs Packages(id)
 .. |mid| replace:: machine_id : refs Machines(id)
