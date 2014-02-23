@@ -44,6 +44,8 @@ In order to provide usefull data, following data model is required.
         id : uuid
         |cat|
         |mat|
+        auth_secret     : char(32)
+        signing_secret : char(32)
 
     Packages:
         category : string
